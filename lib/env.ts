@@ -15,9 +15,9 @@ export function getSiteDomain(): string {
 
   console.warn(
     "ENV 'PUBLIC_DOMAIN' has no value, using default:",
-    "https://web-syncplay.de"
+    "https://web-social-app-production.up.railway.app"
   )
-  return "https://web-syncplay.de"
+  return "https://web-social-app-production.up.railway.app"
 }
 
 export function getRedisURL(): string {

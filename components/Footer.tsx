@@ -1,4 +1,5 @@
 import { FC } from "react"
+import IconCopyright from "./icon/IconCopyright"
 
 interface Props {
   error?: number

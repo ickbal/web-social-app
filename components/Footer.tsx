@@ -1,5 +1,4 @@
 import { FC } from "react"
-import IconGithub from "./icon/IconGithub"
 import NewTabLink from "./action/NewTabLink"
 import IconCopyright from "./icon/IconCopyright"
 

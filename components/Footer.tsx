@@ -1,5 +1,5 @@
 import { FC } from "react";
-import IconCopyright from "./Icon/IconCopyright"; // adjust casing as needed
+import IconCopyright from "./icon/IconCopyright";
 
 interface Props {
   error?: number;

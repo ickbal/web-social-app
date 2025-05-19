@@ -1,14 +1,21 @@
-// components/icon/IconCopyright.tsx
-import { FC } from "react"
+import { FC } from "react";
+import IconCopyright from "./Icon/IconCopyright"; // adjust casing as needed
 
 interface Props {
-  sizeClassName?: string
+  error?: number;
 }
 
-const IconCopyright: FC<Props> = ({ sizeClassName = "" }) => (
-  <svg className={sizeClassName} /* SVG props here */ viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10... (etc)" />
-  </svg>
-)
+const Footer: FC<Props> = ({ error }) => {
+  return (
+    <footer className="flex flex-col bg-dark-900 py-1 px-4">
+      {error && <div>Error {error}</div>}
+      <div className="text-sm flex flex-col gap-1 sm:flex-row sm:items-center">
+        <div className="flex flex-row items-center">
+          <IconCopyright sizeClassName="h-3 w-3" />
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-export default IconCopyright
+export default Footer;
